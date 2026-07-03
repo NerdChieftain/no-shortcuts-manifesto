@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Congratulations! 250 Years of Colonial Independence">
+  <meta name="theme-color" content="#132b2c">
+  <title>No Shortcuts Manifesto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#manifesto">Skip to the manifesto</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">A manifesto for engineering with AI LLM</p>
+      <h1>No Shortcuts Manifesto</h1>
+      <p class="subtitle">Congratulations!</p>
+      <p class="subtitle">250 Years of Colonial Independence</p>
+      <div class="publication-meta" aria-label="Publication details">
+        <span>July 4, 2026</span>
+        <span>© 2026 Jeremy Cox. Licensed under CC BY 4.0.</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <aside class="toc" aria-labelledby="contents-title">
+      <div class="toc-inner">
+        <p class="toc-title" id="contents-title">Contents</p>
+        <nav aria-label="Manifesto sections">
+          <ol>
+            <li class="toc-level-2"><a href="#preamble">Preamble</a></li>
+<li class="toc-level-3"><a href="#focusing-on-speed-misses-the-opportunity">Focusing on Speed Misses the Opportunity</a></li>
+<li class="toc-level-3"><a href="#correctness-is-glorious">Correctness Is Glorious</a></li>
+<li class="toc-level-3"><a href="#fix-your-thinking">Fix Your Thinking</a></li>
+<li class="toc-level-3"><a href="#mountain-in-mountains-out">Mountain In, Mountains Out</a></li>
+<li class="toc-level-3"><a href="#how-you-climb-the-mountain">How You Climb the Mountain</a></li>
+<li class="toc-level-4"><a href="#same-workflow-completely-different-inside">Same Workflow. Completely Different Inside</a></li>
+<li class="toc-level-2"><a href="#the-no-shortcuts-framework">The No Shortcuts Framework</a></li>
+<li class="toc-level-3"><a href="#the-thesis-do-the-job-right">The Thesis: Do the Job Right</a></li>
+<li class="toc-level-3"><a href="#pillar-i-define-the-work-before-you-build-it">Pillar I — Define the Work Before You Build It</a></li>
+<li class="toc-level-4"><a href="#principle-1-complete-expectations">Principle 1 — Complete Expectations</a></li>
+<li class="toc-level-4"><a href="#principle-2-design-it-out-fully">Principle 2 — Design It Out Fully</a></li>
+<li class="toc-level-4"><a href="#principle-3-just-in-time-planning">Principle 3 — Just-In-Time Planning</a></li>
+<li class="toc-level-4"><a href="#principle-4-preserve-the-record">Principle 4 — Preserve the Record</a></li>
+<li class="toc-level-3"><a href="#pillar-ii-engineer-the-whole-product">Pillar II — Engineer the Whole Product</a></li>
+<li class="toc-level-4"><a href="#principle-5-do-the-job-right">Principle 5 — Do the Job Right</a></li>
+<li class="toc-level-4"><a href="#principle-6-simultaneous-outputs">Principle 6 — Simultaneous Outputs</a></li>
+<li class="toc-level-4"><a href="#principle-7-documentation-is-the-source-of-truth">Principle 7 — Documentation Is the Source of Truth</a></li>
+<li class="toc-level-3"><a href="#pillar-iii-direct-the-ai-do-not-follow-it">Pillar III — Direct the AI; Do Not Follow It</a></li>
+<li class="toc-level-4"><a href="#principle-8-ai-as-thought-partner">Principle 8 — AI as Thought Partner</a></li>
+<li class="toc-level-4"><a href="#principle-9-human-in-the-loop-always">Principle 9 — Human in the Loop — Always</a></li>
+<li class="toc-level-3"><a href="#pillar-iv-fail-cheap-learn-early">Pillar IV — Fail Cheap, Learn Early</a></li>
+<li class="toc-level-4"><a href="#principle-10-compress-the-feedback-loop">Principle 10 — Compress the Feedback Loop</a></li>
+<li class="toc-level-3"><a href="#pillar-v-preserve-the-freedom-to-change-course">Pillar V — Preserve the Freedom to Change Course</a></li>
+<li class="toc-level-4"><a href="#principle-11-reset-without-fear">Principle 11 — Reset Without Fear</a></li>
+<li class="toc-level-4"><a href="#principle-12-keep-work-units-small">Principle 12 — Keep Work Units Small</a></li>
+<li class="toc-level-3"><a href="#pillar-vi-code-review-is-not-optional">Pillar VI — Code Review Is Not Optional</a></li>
+<li class="toc-level-4"><a href="#principle-13-human-review-is-the-merge-gate">Principle 13 — Human Review Is the Merge Gate</a></li>
+<li class="toc-level-4"><a href="#principle-14-better-engineering-better-code-faster-reviews">Principle 14 — Better Engineering, Better Code, Faster Reviews</a></li>
+          </ol>
+        </nav>
+      </div>
+    </aside>
+
+    <main id="manifesto" tabindex="-1">
+      <article>
+        <h2 id="preamble">Preamble<a class="heading-link" href="#preamble" aria-label="Link to Preamble">#</a></h2>
+<p>I am always getting myself into trouble. Not intentionally, not like an irresponsible person—just trying to do the right thing. Until it gets out of control. This time I outdid myself. This is my claim to notoriety.</p>
+<p>One day, AI code gen blasted through a five-point ticket in two hours. I found myself with four whole extra days at the end of a three-week sprint. My good friend B.S. was slated to work on two tickets at the end of the sprint, and I messaged him: "It looks like you're in trouble. This is an eight-pointer, you need this three-pointer done first, and you haven't started yet?"</p>
+<p>With good intentions, I loaded up the three-month-old branch he had started and the Jira issues. I went back and forth with Claude... Guess what? The team lead had put the wrong ticket in the sprint. This was actually the third ticket in the series. Okay—fine, I would research the first two. Next thing I knew, Claude had this enormous plan to implement 42 story points.</p>
+<p>So I said to myself, "What's the worst that could happen?" I hit accept all changes.</p>
+<p>Because this was a new feature—so-called "greenfield"—Claude Code (with Claude Opus 4.6) blasted through with alacrity. In six days, I had coded up and demonstrated 42 story points to my product owner.</p>
+<p>Here I was left holding the bag. I did nine weeks' work in six days. I had a volume of code bordering on 8,000 lines. B.S. volunteered to review the code. He hated it. It was simply too much. He despaired. What's worse, Claude could keep up with his feedback and proactively rewrite chunks before he had read them. It was... a learning experience. B.S. learned I was a bad friend (just kidding).</p>
+<p>In one hand, we had what seemed like relatively stable and bug-free code. In the other, we didn't have the bandwidth to do the code review.</p>
+<p>The realization is that those 42 story points weren't about writing code. They were about writing code <strong><em>well</em></strong>, and that includes a time budget for code reviews. Let's call it a 50% split. I had just created a four-and-a-half-week-long code review.</p>
+<hr aria-hidden="true">
+<p>We were muddling through when I challenged B.S., "Come on, we tested it. You don't need to read all the code!"</p>
+<p>Thankfully, B.S. was a no-nonsense kind of guy. He refused to compromise, take shortcuts, or take AI's seemingly good code on credit. He is the hero of this story.</p>
+<p>It was horrible. We barely got the code review completed in six weeks. But there it was: our beautiful new feature.</p>
+<p>But we were haunted by a burning question: How can we make the code review faster?</p>
+<p>The tempting answer: lean into AI code review and AI software factories; remove the human. Let AI solve the AI problem.</p>
+<p>A purist at heart, B.S. refused to compromise again. "How do you know it's good if you don't read it?" He pointed out that he had seen AI do foolish things. Straight-up dumb. You do not trust people like that.</p>
+<p>B.S. hit on a core truth. Using AI to proofread AI is not fixing the disease; you're treating the symptom by rubbing the disease into it. And you're removing the one thing that makes software good—human judgment.</p>
+<p>And thus I began my journey to figure out how to take no shortcuts and maintain workflow quality and rigor.</p>
+<hr aria-hidden="true">
+<p>The answer to this riddle lies not in generating code faster, but in crafting code with engineering rigor.</p>
+<p>Amid the many talks I attended on AI code generation, one point stood out in my mind and has stood the test of time. "AI LLM technology's job is to minimize your pain points." The speaker was introducing RAG. The agent was going to read every technical document the team had written in 20 years and use it as source material for me. Genius. Less pain indeed.</p>
+<p>But wait—the wizened words stuck with me. AI isn't here to make me more efficient? It's not here to do my work for me? It's not here to generate code like a firehose? It's here to make my life easier.</p>
+<p>Someone paraphrased this to me as "AI gives you time back." What a delicious question to ask: "What do I want to do with all my extra time?" I found most people wanted to reinvest in coding, so they would just do more in the same amount of time. That is not a bad answer. But I went straight to my product owner and said, "I've got free time. Let's work on technical debt. I hate this offline data mode we have..." My thought process went straight to, "I know I skip steps when I do my job. Documentation. Unit tests. Design. My product owner is on my case to add these things to the Jira ticket. I don't have the time. But now I do."</p>
+<p>So I set forth on my second experiment. What if I invested this extra time in doing the job right, without <em>skipping steps</em>? What will happen?</p>
+<hr aria-hidden="true">
+<h3 id="focusing-on-speed-misses-the-opportunity">Focusing on Speed Misses the Opportunity<a class="heading-link" href="#focusing-on-speed-misses-the-opportunity" aria-label="Link to Focusing on Speed Misses the Opportunity">#</a></h3>
+<p>Everyone loves to race. So the idea of writing code faster is intoxicating—it is fun—and it tugs at our primal instincts to compete. AI Code Gen sucks you into its world, and you do not want to leave. But do you really want to live there?</p>
+<p>Software has been stuck in the corporate world too long. Somehow the Agile software movement got twisted and corrupted into justifying "get features out to the customer faster." The Agile software movement was about how to do our job right, making a stand against "the man" to let us do it right. Deadlines. Ship code. Somewhere, the mentality became "customers are paying for features." Not features that work, not code that is good, just a new doodad on the dashboard. We have witnessed that customers no longer expect code to work right the first time they get it. Look at how poorly the video game industry performs. They ship broken products and expect the people who bought the game to report bugs for them. Production is the new beta test.</p>
+<p>We stand at a crossroads. We can either use AI Code Gen to make more slop at a faster pace, or we can use AI Code Gen to make better code. The happy accident I discovered is that better-engineered code gets written faster end to end. That much seems obvious in hindsight. We all know about the technical-debt tax that is the consequence of sloppy coding. Yet this insight goes deeper.</p>
+<blockquote><p>Better-engineered code gets written faster end to end.</p></blockquote>
+<p>Not only do you have less technical debt, saving you time downstream—the task of writing the code from inception to code review to testing takes less total time.</p>
+<p>It is time for all of us to pivot. By using the time AI gives developers back, developers can finally write software the correct way.</p>
+<h3 id="correctness-is-glorious">Correctness Is Glorious<a class="heading-link" href="#correctness-is-glorious" aria-label="Link to Correctness Is Glorious">#</a></h3>
+<p>Better code doesn't just save time downstream. It takes less total time from inception to code review.</p>
+<p>Programmers with AI are running around reveling in speed. How quickly we've forgotten the pain of spending two weeks writing a feature, only to realize with two days left that the design would be so much simpler if only we had used five global variables. A mentor once told me that we write the code three times. "You do a proof of concept to convince someone to let you write it. You write the code. Then you come back and write the code again the right way. Wait, just kidding—I'm not going to pay you to write it <em>again</em>."</p>
+<p>What if we lived in a world where coding was fast enough that, when we make some really smelly code, we are allowed to throw it out?</p>
+<p>We all want to do the job right; it's just that our hands are tied. Who cares about working faster? If the only innovation AI brings to the rat race is a bigger wheel, then I'll pass.</p>
+<p>Doing things right is invaluable. And you have never gotten to try it. That changes today. You have the freedom to direct your extra time toward what you think matters: the big problems that you cannot squeeze into your schedule. Pursue the winning strategy that your company just couldn't afford the time to implement. I can see it in your eyes: you already have the big fish you are going after in mind.</p>
+<h3 id="fix-your-thinking">Fix Your Thinking<a class="heading-link" href="#fix-your-thinking" aria-label="Link to Fix Your Thinking">#</a></h3>
+<p>Look at AI code gen as a tool that enables you to do what you always wanted to do. Suddenly, it is not an existential job threat—AI code gen is the secret to your success.</p>
+<p>Unleashing AI code gen's potential is about thinking strategically—not tactically—about time savings. What could you do if you no longer had to worry about deadlines? Dare to dream. Now go do it.</p>
+<blockquote><p>AI code gen is the secret to your success: do what you always wanted to do.</p></blockquote>
+<h3 id="mountain-in-mountains-out">Mountain In, Mountains Out<a class="heading-link" href="#mountain-in-mountains-out" aria-label="Link to Mountain In, Mountains Out">#</a></h3>
+<p>I propose a thought experiment. You can spend as much time as you like planning and designing your software, but you only have one week of development time. Is it possible to design something so well that the code flows forth smoothly wihtout inhibitions?</p>
+<p>I would have said "not possible" three months ago. But I now believe this is true. Writing code is busy work—it is a lot of <strong><em>exhaustive typing</em></strong>. What I am doing when I write code is not typing out sentences translated into some goofy syntax. I spend my time thinking, planning, seeing ten steps ahead, and visualizing data flows in my head. For me, it is frustrating that I can't type faster. I can see it all in my head, but this keyboard is so slow.</p>
+<blockquote><p>I think. It types.</p></blockquote>
+<p>By spending time thinking, formulating, and carefully considering design choices, I am making great code. It's just not typed yet! This is the miracle of AI Code Gen. It can take that masterfully crafted plan you created and execute your vision with prejudice.</p>
+<p>By actually doing our jobs—engineering software—we make a much better product.</p>
+<blockquote><p>Mountain In, Mountains Out</p></blockquote>
+<p>By putting a large amount of well-structured input into the AI, we will get an avalanche of high-quality output.</p>
+<h3 id="how-you-climb-the-mountain">How You Climb the Mountain<a class="heading-link" href="#how-you-climb-the-mountain" aria-label="Link to How You Climb the Mountain">#</a></h3>
+<p>"Hey Jeremy, why didn't I just think to do my job right?" I am frustrated, too. A vision easily described is not so easy to execute.</p>
+<p>The core idea is to spend time on engineering activities before ever going to code generation. We flip it upside down. Currently, I estimate that 80% of the time is spent coding and debugging. Now we're going to focus on design first: 80% on design instead of 80% on coding. I feel a bit flippant saying that; in reality, your coding time will be split about 50% planning and 50% code gen.</p>
+<blockquote><p>Time well spent: 80% on design first instead of 80% on coding.</p></blockquote>
+<h4 id="same-workflow-completely-different-inside">Same Workflow. Completely Different Inside<a class="heading-link" href="#same-workflow-completely-different-inside" aria-label="Link to Same Workflow. Completely Different Inside">#</a></h4>
+<p>The workflow still revolves around a programmer taking a ticket, writing code, testing, and then a merge request. The fundamentals stay the same. How we work must completely change.</p>
+<blockquote><p>Don't take shortcuts. Do it right.</p></blockquote>
+<p>We make really detailed tickets with clear program behavior and goals. We talk back and forth with the AI, using pair programming to plan and explore design decisions. We document designs and implementation plans. We supervise the AI code gen process and steer it when it gets off course. We follow good programming practice—stop and write unit tests frequently. We use AI to help us review our code. It can summarize the code and point us to areas we think are critical. We are willing to throw away code that's bad. If it's flawed, we can afford to replace it.</p>
+<p>When I started doing all these things, something equally amazing and unexpected happened. The code review process began to go faster. Reviewers can come in and read the design before they look at the code. They can evaluate at a high level where this is headed. The code is cleaner and neater, well-commented, and has an easy flow. There are legitimately fewer bugs to create swirl.</p>
+<p>The code review didn't get faster because we reviewed less carefully. It got faster because there was less to worry about.</p>
+<h2 id="the-no-shortcuts-framework">The No Shortcuts Framework<a class="heading-link" href="#the-no-shortcuts-framework" aria-label="Link to The No Shortcuts Framework">#</a></h2>
+<p>The story is personal. The standard is not.</p>
+<p>The lesson is not that AI code gen should be slowed down. The lesson is that engineering must evolve to catch up with it.</p>
+<blockquote><p>Forget about working faster. Focus now on doing a better job.  A complete job.</p></blockquote>
+<p>AI can generate code at a pace that would have seemed absurd a year ago. That does not make the hard parts of software development easier. Requirements can still be unclear. Designs can still be wrong. Systems can still be fragile. Tests can still miss what matters. Reviewers can still be overwhelmed. And a confident-looking answer can still be foolish.</p>
+<p>The purpose of <strong>No Shortcuts</strong> is not to generate more code. It is to use the time AI gives us back to do the job correctly.</p>
+<blockquote><p>AI gave us time back. Use it like engineers.</p></blockquote>
+<p>No Shortcuts is built on six pillars. Together, they preserve the workflow we already know—ticket, code, test, code review—while changing the discipline inside every step.</p>
+<p>The process does not need to be replaced. How we work does.</p>
+<hr aria-hidden="true">
+<h3 id="the-thesis-do-the-job-right">The Thesis: Do the Job Right<a class="heading-link" href="#the-thesis-do-the-job-right" aria-label="Link to The Thesis: Do the Job Right">#</a></h3>
+<p>For years, developers have been forced to make tradeoffs we did not want to make.</p>
+<p>We skip the design document because the sprint is moving. We defer the unit tests because the feature is almost done. We leave the ticket vague because everyone has a rough idea. We accept awkward code because rewriting it would take too long. We tell ourselves we will document it later.</p>
+<p>Later rarely comes.</p>
+<p>AI changes the economics of that work. It reduces the cost of turning a good plan into code. That is not permission to lower the bar. It is the opportunity to finally meet it.</p>
+<p><strong>Do the Job Right</strong> is not one task in the workflow. It is the governing idea behind all of them.</p>
+<p>A completed feature is not merely code that compiles. It is understood, designed, tested, documented, reviewable, and maintainable.</p>
+<blockquote><p>AI writes the code. You write the software.</p></blockquote>
+<hr aria-hidden="true">
+<h3 id="pillar-i-define-the-work-before-you-build-it">Pillar I — Define the Work Before You Build It<a class="heading-link" href="#pillar-i-define-the-work-before-you-build-it" aria-label="Link to Pillar I — Define the Work Before You Build It">#</a></h3>
+<p>A weak ticket does not become a strong feature because an AI touched it.</p>
+<p>Before code generation begins, the team needs a shared understanding of the problem, the intended behavior, the constraints, and the definition of done. AI can help expose ambiguity, find missing cases, and challenge assumptions. It cannot decide what the business actually needs.</p>
+<p>This pillar contains four principles.</p>
+<h4 id="principle-1-complete-expectations">Principle 1 — Complete Expectations<a class="heading-link" href="#principle-1-complete-expectations" aria-label="Link to Principle 1 — Complete Expectations">#</a></h4>
+<p>Write the ticket right.</p>
+<p>A ticket is not merely a request to begin coding. It is the first engineering artifact. It should explain the problem being solved, the desired behavior, success criteria, affected components, constraints, known risks, and open questions.</p>
+<p>A good ticket gives the developer and the reviewer something concrete to agree on before implementation begins.</p>
+<p>Where behavior matters, state it plainly. Where uncertainty exists, write it down. Where a decision is still needed, surface it instead of quietly guessing. A common mistake is to start talking about how. You need to define what you want; defer how to build it until work starts.</p>
+<blockquote><p>Do not focus on how to implement the ticket; rather what it will accomplish.</p></blockquote>
+<p>Decompose the goal into verifiable slices of functionality. Each slice should carry a definition of done you can actually check—concrete results someone can confirm. It must be verifiable. Slicing the work this way is what keeps a ticket bounded and reviewable.</p>
+<p>The goal is not bureaucratic perfection. The goal is an unambiguous definition of done.</p>
+<blockquote><p>If it surprises your reviewer, you were not done planning.</p></blockquote>
+<h4 id="principle-2-design-it-out-fully">Principle 2 — Design It Out Fully<a class="heading-link" href="#principle-2-design-it-out-fully" aria-label="Link to Principle 2 — Design It Out Fully">#</a></h4>
+<p>When you start to code, don't write a single line. Do the hard thinking before asking the AI to type.</p>
+<p>AI code generation is strongest when it executes a well-considered solution. It is weakest when it is asked to discover the problem, choose the architecture, invent missing requirements, and generate production code all at once. This is the failure of vibe coding.</p>
+<p>Develop the solution with the model before generating large amounts of implementation code. Explore the data flow. Identify integration points. Consider failure modes. Challenge tradeoffs. Determine what belongs in scope and what does not. Write down the plan.</p>
+<p>After all that hard work, save the plan in the repository. A useful implementation plan is not a disposable chat transcript. It is part of the engineering record. It helps future developers understand the decision, gives reviewers a high-level artifact to evaluate, and can be retrieved later through repository search or RAG.</p>
+<h4 id="principle-3-just-in-time-planning">Principle 3 — Just-In-Time Planning<a class="heading-link" href="#principle-3-just-in-time-planning" aria-label="Link to Principle 3 — Just-In-Time Planning">#</a></h4>
+<p>The ticket says WHAT you want to accomplish. It defers the HOW until planning time.</p>
+<p>A ticket that dictates the implementation is a ticket that will be wrong. The early work changes the later interfaces, so a HOW written too soon gets invalidated by what you learn while building. State the goal, the behavior, and the definition of done.  Choices regarding how to implement are made with the starting code state in mind.</p>
+<blockquote><p>The ticket can't predict the future code state, so don't try.</p></blockquote>
+<p>The same holds across a multi-issue feature: do not pre-plan the whole thing into a pile of tickets up front. Plan deeply, but create the next unit of work just in time—once the work ahead of it is stable. This keeps the "mountain in" without building a mountain you will have to demolish.</p>
+<p>Where WHAT ends and HOW begins is not a clean line. It is an art form. But the discipline of drawing it is what keeps a ticket bounded, reviewable, and cheap to change.</p>
+<h4 id="principle-4-preserve-the-record">Principle 4 — Preserve the Record<a class="heading-link" href="#principle-4-preserve-the-record" aria-label="Link to Principle 4 — Preserve the Record">#</a></h4>
+<p>AI code gen creates an implementation plan. This serves as a landmark of intention and design before work begins. Annotate plans at the end with how they changed and evolved. The plan is a digest, a readable summary for each ticket. This is important for the reviewer to consider and also proves that the human did the engineering work. It is a cohesive document reflecting the thought process, not a diff scattered across code and design files.</p>
+<p>The plan is not a description of the system as it stands today. It is a moment frozen in time. It will diverge from the documents over time. It preserves the engineering decisions.</p>
+<blockquote><p>The ticket is the design. The design is the ticket.</p></blockquote>
+<p>Documentation as code is the innovation. Enable documentation to reach critical mass and guide AI code gen. The AI writes up what you ask of it. Garbage in, garbage out. Documents full of constraints have quality baked into every request.</p>
+<blockquote><p>I can say anecdotally that the LLM has surprised me in a good way when I am planning and coding. "This is out of scope for this ticket; that upgrade is planned for ticket 12345." I was floored. How did it know that? Because I keep documenting the work I do, and it read it somewhere. Claude keeps sticking ticket-number references in comments in my code. Marginally useful to a human, but apparently a cross-reference gold mine to Claude. You will reach a critical mass where Claude knows your well-documented project very well.</p></blockquote>
+<hr aria-hidden="true">
+<h3 id="pillar-ii-engineer-the-whole-product">Pillar II — Engineer the Whole Product<a class="heading-link" href="#pillar-ii-engineer-the-whole-product" aria-label="Link to Pillar II — Engineer the Whole Product">#</a></h3>
+<p>Code is not the product. Code is one part of the product.</p>
+<p>The feature also includes tests, documentation, observability, integration behavior, failure handling, maintainability, and the reasoning that makes non-obvious decisions understandable. AI gives us a chance to stop treating those things as optional work that happens only when the schedule allows.</p>
+<h4 id="principle-5-do-the-job-right">Principle 5 — Do the Job Right<a class="heading-link" href="#principle-5-do-the-job-right" aria-label="Link to Principle 5 — Do the Job Right">#</a></h4>
+<p>Use the time AI gives back to do what you never had time to do.</p>
+<p>Write the unit tests. Clarify the ticket. Document the design. Clean up the abstraction. Investigate the edge case. Improve the logging. Fix the technical debt that makes every future change slower.</p>
+<p>These are not indulgences. They are the work.</p>
+<p>For too long, “faster” has meant <strong><em>taking a shortcut</em></strong> and making someone else pay for it later. The poor product "pays" for it. AI lets us break that bargain.</p>
+<blockquote><p>Faster code is not better code. Better code is faster end to end.</p></blockquote>
+<h4 id="principle-6-simultaneous-outputs">Principle 6 — Simultaneous Outputs<a class="heading-link" href="#principle-6-simultaneous-outputs" aria-label="Link to Principle 6 — Simultaneous Outputs">#</a></h4>
+<p>Generate complete engineering outputs together.</p>
+<p>A well-developed plan allows AI to help produce code, unit tests, integration tests, documentation, logging, and related configuration in the same working session. These should not be treated as a long sequence of tasks where quality is postponed until after the feature is “done.”</p>
+<p>The code, tests, and supporting artifacts should reinforce one another.</p>
+<p>That does not mean accepting them all blindly. It means using AI's speed to build a complete slice of the feature while the design is fresh in your mind.</p>
+<h4 id="principle-7-documentation-is-the-source-of-truth">Principle 7 — Documentation Is the Source of Truth<a class="heading-link" href="#principle-7-documentation-is-the-source-of-truth" aria-label="Link to Principle 7 — Documentation Is the Source of Truth">#</a></h4>
+<p>Creating documentation in the repository serves two purposes: to help humans understand the code and to help the AI code gen agent understand the code. The docs describe the current state of the system and how the parts relate to one another. That imposes an obligation a plan does not carry: when the code changes, the document must change with it. A document that describes a system that no longer exists is not neutral—it actively misleads, and a stale source of truth is worse than none at all. Fixing it is part of the definition of done.</p>
+<blockquote><p>The feature is not done when the code exists. It is done when the engineering exists.</p></blockquote>
+<p>In principle, the docs are always accurate. Drift is caught and corrected at code review. However, drift does happen and requires correction. Keeping documentation true is ongoing work that demands vigilance and rigor, whether corrected with each change or swept up on a regular cadence.</p>
+<p>Now do something radical: commit it to the repository. Commit the coding standards and plans to the repository.</p>
+<blockquote><p>Join the documentation-as-code revolution.</p></blockquote>
+<p>Documentation creates the critical mass for AI code gen to create a consistent, engineered product.</p>
+<hr aria-hidden="true">
+<h3 id="pillar-iii-direct-the-ai-do-not-follow-it">Pillar III — Direct the AI; Do Not Follow It<a class="heading-link" href="#pillar-iii-direct-the-ai-do-not-follow-it" aria-label="Link to Pillar III — Direct the AI; Do Not Follow It">#</a></h3>
+<p>The model is a powerful collaborator. It is not the engineer in charge.</p>
+<p>AI can identify risks you had not considered, propose alternatives, summarize unfamiliar code, and help explore a design more quickly than any individual can alone. It can also over-design, expand scope, misread a constraint, invent an abstraction, or confidently pursue a solution to the wrong problem.</p>
+<blockquote><p>The AI is the most well-educated, hardest-working intern you will ever have. Supervise it.</p></blockquote>
+<p>The human remains accountable.</p>
+<blockquote><p>The human in the loop is doing the engineering.</p></blockquote>
+<h4 id="principle-8-ai-as-thought-partner">Principle 8 — AI as Thought Partner<a class="heading-link" href="#principle-8-ai-as-thought-partner" aria-label="Link to Principle 8 — AI as Thought Partner">#</a></h4>
+<p>Use AI to help you think, not merely to type.</p>
+<p>The best AI-assisted work is a conversation. Bring the model the ticket, the source context, the architecture, the constraints, and the concerns you already have. Ask it what you may be missing. Ask it to distinguish facts from assumptions. Ask it to challenge the plan before it implements the plan.</p>
+<p>A good developer does not simply prompt for output. A good developer directs the discussion.</p>
+<blockquote><p>An AI LLM provides a collaborator who brings massive experience. From now on, you work with two heads instead of one.</p></blockquote>
+<p>That includes a new skill: learning the tendencies of the model you are working with. Different models are eager in different ways. Some push toward action. Some over-question. Some over-design. Some are too willing to make a plausible assumption and keep moving.</p>
+<p>You must learn to hear the difference between a legitimate concern, a useful alternative, a speculative complication, and a foolish divergence.</p>
+<p>Sometimes the correct response is, “That is a real issue; let us investigate it.” Sometimes it is, “Stop. That is not the problem we are solving.”</p>
+<blockquote><p>AI fluency is not prompt writing. It is engineering judgment applied through a new interface.</p></blockquote>
+<p>Repository instructions, such as <code>CLAUDE.md</code>, can establish helpful defaults: plan first, ask questions early, respect explicit constraints, do not expand scope, and investigate before acting. They are valuable because they keep the model from repeatedly relearning the team's working style.</p>
+<blockquote><p>AI cannot make judgments.</p></blockquote>
+<p>But instructions are not judgment. They cannot replace understanding the system well enough to know when the model is wrong.</p>
+<h4 id="principle-9-human-in-the-loop-always">Principle 9 — Human in the Loop — Always<a class="heading-link" href="#principle-9-human-in-the-loop-always" aria-label="Link to Principle 9 — Human in the Loop — Always">#</a></h4>
+<p>The human is not optional.</p>
+<p>Do not take AI's code on credit. Do not outsource responsibility to a model because its answer is polished, thorough, or fast.</p>
+<p>Watch generated work carefully. Stop it when it goes off course. Read the code. Test the behavior. Verify claims against the actual system. Require human judgment where it matters.</p>
+<p>Use AI to summarize changes, identify areas of risk, explain unfamiliar code, and help a reviewer navigate a large merge request. Do not use AI as an excuse to remove the one part of the process that makes software trustworthy. Do not compromise good work for speed.</p>
+<blockquote><p>Trust but verify. Mostly verify.</p></blockquote>
+<p>This connects all the way back to the ticket. The goal and the goalposts <em>should</em> already be defined.</p>
+<blockquote><p>Using AI to proofread AI is not fixing the disease. You are treating the symptom by rubbing the disease into it.</p></blockquote>
+<hr aria-hidden="true">
+<h3 id="pillar-iv-fail-cheap-learn-early">Pillar IV — Fail Cheap, Learn Early<a class="heading-link" href="#pillar-iv-fail-cheap-learn-early" aria-label="Link to Pillar IV — Fail Cheap, Learn Early">#</a></h3>
+<p>AI speed is most useful when it shortens the distance between an idea and meaningful feedback.</p>
+<p>The purpose is not to hide the work from other people until a massive branch is ready. The purpose is to make it easier to show a real thing, learn what is wrong, and adjust before weak assumptions become expensive.</p>
+<h4 id="principle-10-compress-the-feedback-loop">Principle 10 — Compress the Feedback Loop<a class="heading-link" href="#principle-10-compress-the-feedback-loop" aria-label="Link to Principle 10 — Compress the Feedback Loop">#</a></h4>
+<p>Get feedback while the work is still cheap to change.</p>
+<blockquote><p>AI-generated code is always cheap to change.</p></blockquote>
+<p>Use prototypes, design walkthroughs, focused demos, and early test runs to give people something real to react to. A conversation about an imagined feature is useful. A conversation about a working version of the feature is better. What is better than a wireframe you discuss for an hour with four other people? Three demos of slightly different flavors of the feature as a conversation starters.</p>
+<p>This applies to technical feedback as well as product feedback. The sooner a reviewer sees the plan, the sooner they can question the design. The sooner a teammate sees a prototype, the sooner they can point out a workflow problem. The sooner a test exposes a false assumption, the sooner you can change course.</p>
+<blockquote><p>Reducing the coding time means you have more time afterward for feedback.</p></blockquote>
+<p>Code review is not a safety net for a feature that has already become too large to understand. It is a finish line for work that has already been made reviewable.</p>
+<blockquote><p>The code review did not get faster because we reviewed less carefully. It got faster because there was less to worry about.</p></blockquote>
+<hr aria-hidden="true">
+<h3 id="pillar-v-preserve-the-freedom-to-change-course">Pillar V — Preserve the Freedom to Change Course<a class="heading-link" href="#pillar-v-preserve-the-freedom-to-change-course" aria-label="Link to Pillar V — Preserve the Freedom to Change Course">#</a></h3>
+<p>The cost of code has fallen. The cost of being wrong has not.</p>
+<p>AI makes it cheaper to explore, prototype, revise, and restart. That should make us less attached to flawed work—not more willing to ship it because the first version arrived quickly.</p>
+<p>This pillar contains two principles.</p>
+<h4 id="principle-11-reset-without-fear">Principle 11 — Reset Without Fear<a class="heading-link" href="#principle-11-reset-without-fear" aria-label="Link to Principle 11 — Reset Without Fear">#</a></h4>
+<p>Be willing to throw away code that is wrong.</p>
+<p>A prototype can reveal that the ticket was misunderstood. A design conversation can expose a missing requirement. A review can show that the approach is awkward even though the code technically works. A test can demonstrate that the abstraction was wrong from the beginning.</p>
+<p>When that happens, reset.</p>
+<blockquote><p>Every programmer's dream: start over and do it right.</p></blockquote>
+<p>Do not defend bad code because it took effort to produce. Do not preserve a weak design because it is already half implemented. Do not confuse a working demo with a sound solution.</p>
+<p>Low sunk cost is not a reason to be careless. It is a strategic advantage: it gives us permission to make a better decision when we learn something new.</p>
+<h4 id="principle-12-keep-work-units-small">Principle 12 — Keep Work Units Small<a class="heading-link" href="#principle-12-keep-work-units-small" aria-label="Link to Principle 12 — Keep Work Units Small">#</a></h4>
+<p>Echoing the need to decompose, your work units are only disposable so long as the cost of replacement is cheap. A slice you can throw away in an afternoon is a slice you will throw away when it is wrong. For the developer, this emphasizes the need to break down tasks into subtasks: stop, review, and test frequently.</p>
+<p>Even if your tickets aren't small, you can work with the LLM when it creates its implementation plan to keep the SDLC loop tight. Stop after each step, compile, and run your new tests.</p>
+<blockquote><p>Do not create problems you then have to solve at review.</p></blockquote>
+<p>When you stop between steps, ask Claude or a different Claude session to do a code review. It will catch mistakes. It will make you think. And maybe it will give you reason to change course.</p>
+<blockquote><p>Sunk cost is cheaper when the code took two hours. Throwing code out has never been easier.</p></blockquote>
+<p>Seek feedback quickly from yourself, Claude, and unit tests.</p>
+<hr aria-hidden="true">
+<h3 id="pillar-vi-code-review-is-not-optional">Pillar VI — Code Review Is Not Optional<a class="heading-link" href="#pillar-vi-code-review-is-not-optional" aria-label="Link to Pillar VI — Code Review Is Not Optional">#</a></h3>
+<p>AI can help with code review. It can summarize a change, trace data flow, identify risk, explain unfamiliar code, and suggest where a reviewer should look first. It cannot be the reviewer of record.</p>
+<blockquote><p>The human in the loop supervises the AI. The AI never supervises the human.</p></blockquote>
+<h4 id="principle-13-human-review-is-the-merge-gate">Principle 13 — Human Review Is the Merge Gate<a class="heading-link" href="#principle-13-human-review-is-the-merge-gate" aria-label="Link to Principle 13 — Human Review Is the Merge Gate">#</a></h4>
+<p>Every production change requires human review. Tests are evidence, not understanding. A green build does not prove that the design is sound, the implementation is maintainable, or the change does what the ticket intended.</p>
+<blockquote><p>Finally, a third programmer enters the arena.</p></blockquote>
+<p>A reviewer must understand the purpose of the change, evaluate the design, inspect the implementation, and be willing to share responsibility for what is merged. AI can support that judgment. It cannot replace it.</p>
+<blockquote><p>Code review time is development time.</p></blockquote>
+<h4 id="principle-14-better-engineering-better-code-faster-reviews">Principle 14 — Better Engineering, Better Code, Faster Reviews<a class="heading-link" href="#principle-14-better-engineering-better-code-faster-reviews" aria-label="Link to Principle 14 — Better Engineering, Better Code, Faster Reviews">#</a></h4>
+<p>I started my journey seeking a way to review AI-generated code.</p>
+<p>The answer is to make it more palatable. Better engineering and better AI guardrails mean fewer mistakes and greater consistency. The code is simply cleaner and easier to read.</p>
+<blockquote><p>If no human understands the change, the change is not ready.</p></blockquote>
+<p>Coding standards are already enforced. Extensive comments exist. Documentation and plans cross-reference the work.</p>
+<p>The focus here is on doing more engineering. That extends to the review. Documentation as code enables the reviewer. The reviewer can see what you planned to do, why you planned it, and how you designed it <em>before</em> reading a single line of code. Instead of having to assemble it all from the bottom up during the review—which takes time—the reviewer can simply read it. "The gist" is given up front.</p>
+<blockquote><p>The answer to overwhelming AI output is not less review. It is more reviewable work.</p></blockquote>
+<hr aria-hidden="true">
+<p class="credits">Co-authored with Claude Opus 4.8, ChatGPT 5.5, and peer reviewers.</p>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Jeremy Cox. Licensed under CC BY 4.0.</p>
+    <p><a href="manifesto.md">Read the source Markdown</a> <span aria-hidden="true">·</span> <a href="LICENSE.md">License</a></p>
+  </footer>
+</body>
+</html>
