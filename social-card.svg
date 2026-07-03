@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">No Shortcuts Manifesto social card</title>
+  <desc id="description">No Shortcuts. AI gave us time back. Use it like engineers.</desc>
+  <rect width="1200" height="630" fill="#132b2c"/>
+  <rect width="16" height="630" fill="#c65332"/>
+  <circle cx="1130" cy="580" r="250" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="1130" cy="580" r="320" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="52"/>
+  <text x="88" y="145" fill="#f5b69e" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="9">NO SHORTCUTS</text>
+  <line x1="88" y1="188" x2="345" y2="188" stroke="#c65332" stroke-width="9"/>
+  <text x="88" y="335" fill="#fffdf7" font-family="Georgia, 'Times New Roman', serif" font-size="76">AI gave us time back.</text>
+  <text x="88" y="435" fill="#fffdf7" font-family="Georgia, 'Times New Roman', serif" font-size="76">Use it like engineers.</text>
+</svg>
