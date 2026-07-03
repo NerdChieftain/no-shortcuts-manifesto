@@ -145,7 +145,7 @@ def render_toc(headings: list[Heading]) -> str:
     return "\n".join(items)
 
 
-def parse_source(source: str) -> tuple[str, str, str, str, list[str]]:
+def parse_source(source: str) -> tuple[str, str, str, list[str], list[str]]:
     lines = source.splitlines()
     if not lines or not lines[0].startswith("# "):
         raise ValueError("manifesto.md must begin with a level-one title")
@@ -160,10 +160,10 @@ def parse_source(source: str) -> tuple[str, str, str, str, list[str]]:
         raise ValueError("Expected copyright, date, and subtitle below the title")
 
     copyright_line, publication_date = metadata[:2]
-    subtitle = " ".join(metadata[2:])
+    subtitle_lines = metadata[2:]
     while index < len(lines) and not lines[index].strip():
         index += 1
-    return title, copyright_line, publication_date, subtitle, lines[index:]
+    return title, copyright_line, publication_date, subtitle_lines, lines[index:]
 
 
 def validate_document(document: str, headings: list[Heading]) -> None:
@@ -185,8 +185,12 @@ def validate_document(document: str, headings: list[Heading]) -> None:
 
 def build() -> None:
     source = SOURCE.read_text(encoding="utf-8")
-    title, copyright_line, publication_date, subtitle, body_lines = parse_source(
-        source
+    title, copyright_line, publication_date, subtitle_lines, body_lines = (
+        parse_source(source)
+    )
+    subtitle = " ".join(subtitle_lines)
+    subtitle_html = "\n      ".join(
+        f'<p class="subtitle">{html.escape(line)}</p>' for line in subtitle_lines
     )
     article, headings = render_markdown(body_lines)
     toc = render_toc(headings)
@@ -213,9 +217,9 @@ def build() -> None:
   <a class="skip-link" href="#manifesto">Skip to the manifesto</a>
   <header class="hero">
     <div class="hero-inner">
-      <p class="eyebrow">A manifesto for engineering with AI</p>
+      <p class="eyebrow">A manifesto for engineering with AI LLM</p>
       <h1>{html.escape(title)}</h1>
-      <p class="subtitle">{html.escape(subtitle)}</p>
+      {subtitle_html}
       <div class="publication-meta" aria-label="Publication details">
         <span>{html.escape(publication_date)}</span>
         <span>{html.escape(copyright_line)}</span>

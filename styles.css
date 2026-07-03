@@ -123,6 +123,10 @@ a:hover {
   line-height: 1.35;
 }
 
+.subtitle + .subtitle {
+  margin-top: 0.15rem;
+}
+
 .publication-meta {
   display: flex;
   flex-wrap: wrap;
