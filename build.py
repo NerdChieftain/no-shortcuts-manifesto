@@ -23,8 +23,9 @@ SHORT_OUTPUT = ROOT / "tldr.html"
 
 SITE_URL = "https://nerdchieftain.github.io/no-shortcuts-manifesto/"
 SOCIAL_IMAGE_URL = f"{SITE_URL}social-card.png"
+REPOSITORY_URL = "https://github.com/NerdChieftain/no-shortcuts-manifesto"
 DISCUSSIONS_URL = (
-    "https://github.com/NerdChieftain/no-shortcuts-manifesto/discussions"
+    f"{REPOSITORY_URL}/discussions"
 )
 DESCRIPTION = (
     "AI code generation should make us better engineers—not merely faster "
@@ -256,6 +257,15 @@ def render_footer(copyright_line: str) -> str:
   </footer>"""
 
 
+def render_star_button() -> str:
+    return (
+        f'<a class="button button-github" href="{REPOSITORY_URL}" target="_blank" '
+        'rel="noopener noreferrer" '
+        'aria-label="Star NerdChieftain/no-shortcuts-manifesto on GitHub">'
+        '★ Star on GitHub <span aria-hidden="true">↗</span></a>'
+    )
+
+
 def build() -> None:
     source = SOURCE.read_text(encoding="utf-8")
     title, copyright_line, publication_date, subtitle_lines, body_lines = (
@@ -294,6 +304,7 @@ def build() -> None:
         <a class="button button-primary" href="tldr.html">Read the short version</a>
         <a class="button button-secondary" href="#preamble">Start the manifesto</a>
         <a class="button button-text" href="{DISCUSSIONS_URL}">Challenge the framework <span aria-hidden="true">↗</span></a>
+        {render_star_button()}
       </div>
       <p class="occasion">{occasion_html}</p>
       <div class="publication-meta" aria-label="Publication details">
@@ -360,6 +371,7 @@ def build() -> None:
       <div class="short-actions">
         <a class="button button-primary button-dark" href="index.html#preamble">Read the full manifesto</a>
         <a class="button button-outline" href="{DISCUSSIONS_URL}">Challenge the framework <span aria-hidden="true">↗</span></a>
+        {render_star_button()}
       </div>
     </article>
   </main>
